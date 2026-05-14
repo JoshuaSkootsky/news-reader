@@ -73,6 +73,36 @@ pnpm expo run:android
 pnpm expo run:ios
 ```
 
+## Web Support
+
+This app supports web builds with PWA capabilities.
+
+```bash
+# Run web locally
+pnpm web
+# or
+pnpm expo start --web
+
+# Build web for production
+npx expo export --platform web
+```
+
+The web build outputs to `dist/` and can be deployed to any static host (Vercel, Netlify, GitHub Pages, etc.).
+
+### Web Features
+- PWA support (offline, installable)
+- Responsive design
+- SEO optimized with expo-router
+
+### Deploy Web
+
+```bash
+# Export web bundle
+npx expo export --platform web
+
+# Deploy dist/ folder to your preferred host
+```
+
 ## Environment Variables
 
 | Variable | Value | Description |
