@@ -46,6 +46,7 @@ module.exports = {
     experiments: {
       typedRoutes: true,
       reactCompiler: true,
+      basePath: process.env.GITHUB_PAGES ? '/news-reader' : '',
     },
     runtimeVersion: {
       policy: 'fingerprint',
