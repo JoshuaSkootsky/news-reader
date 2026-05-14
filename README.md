@@ -75,6 +75,8 @@ pnpm expo run:ios
 
 ## Web Support
 
+[![Deployed on GitHub Pages](https://img.shields.io/badge/Deployed-GitHub%20Pages-blue)](https://joshuaskootsky.github.io/news-reader/)
+
 This app supports web builds with PWA capabilities.
 
 ```bash
@@ -102,6 +104,10 @@ npx expo export --platform web
 
 # Deploy dist/ folder to your preferred host
 ```
+
+### GitHub Pages Caveats
+
+> **Note:** GitHub Pages serves a static site, so client-side routing (deep links like `/article/123`) will return a 404. The app's root URL works fine, but deep navigation requires a custom server or a host that supports SPA routing (Vercel, Netlify, etc.).
 
 ## Environment Variables
 
